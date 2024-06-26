@@ -31,7 +31,8 @@ class _CounterViewState extends State<CounterView> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Counter', style: TextStyle(fontSize: 15)),
+            const Text('Counter', style: TextStyle(fontSize: 20),
+            ),
             const SizedBox(height: 10,),
             ElevatedButton(
               onPressed: () => context.read<CounterCubit>().increment(),
